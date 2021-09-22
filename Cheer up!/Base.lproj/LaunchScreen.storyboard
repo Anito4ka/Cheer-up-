@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="o6d-3G-oJx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWk-ye-uFg" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="271.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Снимок экрана 2021-07-23 в 12.53.37" translatesAutoresizingMaskIntoConstraints="NO" id="lpn-eM-2sa" userLabel="cheer up">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="271.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="lpn-eM-2sa" secondAttribute="bottom" id="17B-sN-eFz"/>
+                                            <constraint firstItem="lpn-eM-2sa" firstAttribute="leading" secondItem="zWk-ye-uFg" secondAttribute="leading" id="5hY-vk-Agk"/>
+                                            <constraint firstItem="lpn-eM-2sa" firstAttribute="top" secondItem="zWk-ye-uFg" secondAttribute="top" id="OoJ-P2-ETC"/>
+                                            <constraint firstAttribute="trailing" secondItem="lpn-eM-2sa" secondAttribute="trailing" id="U4R-eS-uPN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN5-Kj-yQw" userLabel="Main View">
+                                        <rect key="frame" x="0.0" y="273.5" width="414" height="271"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="ibU-s8-Og0">
+                                                <rect key="frame" x="32" y="0.0" width="350" height="271"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ibU-s8-Og0" secondAttribute="height" multiplier="138:107" id="QMb-B2-LkC"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ibU-s8-Og0" firstAttribute="centerX" secondItem="iN5-Kj-yQw" secondAttribute="centerX" id="CNK-GA-WyL"/>
+                                            <constraint firstAttribute="bottom" secondItem="ibU-s8-Og0" secondAttribute="bottom" id="OCI-SV-tKn"/>
+                                            <constraint firstItem="ibU-s8-Og0" firstAttribute="top" secondItem="iN5-Kj-yQw" secondAttribute="top" id="lfJ-X3-JKo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7z-Yo-82x" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="546.5" width="414" height="271.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to my honey with love" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cR-Tz-K53">
+                                                <rect key="frame" x="115.5" y="124.5" width="183.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6cR-Tz-K53" firstAttribute="centerY" secondItem="l7z-Yo-82x" secondAttribute="centerY" id="j21-jp-DkT"/>
+                                            <constraint firstItem="6cR-Tz-K53" firstAttribute="centerX" secondItem="l7z-Yo-82x" secondAttribute="centerX" id="vn1-Rt-hPm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.58823529411764708" green="0.72941176470588232" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o6d-3G-oJx" secondAttribute="bottom" id="3eE-In-gOa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o6d-3G-oJx" secondAttribute="trailing" id="kfS-1w-UaJ"/>
+                            <constraint firstItem="o6d-3G-oJx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s4c-Mt-JhU"/>
+                            <constraint firstItem="o6d-3G-oJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sYb-0J-DKK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main" width="80" height="80"/>
+        <image name="Снимок экрана 2021-07-23 в 12.53.37" width="1028" height="450"/>
+    </resources>
+</document>
